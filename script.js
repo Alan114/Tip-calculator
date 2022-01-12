@@ -55,3 +55,10 @@ peopleInput.addEventListener("input", (e) => {
     total.value = peopleInput.value * total.value;
   }
 });
+
+reset.addEventListener("click", () => {
+  billInput.value = 0;
+  peopleInput.value = 0;
+  tipAmount.value = 0;
+  total.value = 0;
+});

@@ -102,6 +102,19 @@
   background-color: hsl(189, 41%, 97%);
 }
 
+#custom-input {
+  background-color: hsl(189, 41%, 97%);
+  padding: 0.4rem 1rem;
+  color: hsl(183, 100%, 15%);
+  border: 1px hsl(183, 100%, 15%) solid;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: right;
+  display: none;
+  grid-column-end: span 2;
+}
+
 .display-box {
   display: flex;
   flex-direction: column;

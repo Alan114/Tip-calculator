@@ -4,6 +4,8 @@ const peopleInput = document.querySelector("#people");
 const tipAmount = document.querySelector("#tip-amount");
 const total = document.querySelector("#total");
 const reset = document.querySelector("#reset");
+const customBtn = document.querySelector(".custom");
+const customInput = document.querySelector("#custom-input");
 
 tipAmount.addEventListener("keydown", (e) => {
   e.preventDefault();
@@ -47,6 +49,10 @@ tipPercentage.forEach((percentage) => {
       total.value = parseFloat(billInput.value) + parseFloat(tipAmount.value);
     }
   });
+});
+
+customBtn.addEventListener("click", (e) => {
+  customInput.style.display = "block";
 });
 
 peopleInput.addEventListener(

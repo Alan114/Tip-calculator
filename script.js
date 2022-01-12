@@ -32,19 +32,19 @@ tipPercentage.forEach((percentage) => {
   percentage.addEventListener("click", () => {
     if (percentage.textContent === "5%") {
       tipAmount.value = billInput.value * 0.05;
-      total.value = billInput.value * 0.05;
+      total.value = parseInt(billInput.value) + parseInt(tipAmount.value);
     } else if (percentage.textContent === "10%") {
       tipAmount.value = billInput.value * 0.1;
-      total.value = billInput.value * 0.1;
+      total.value = parseInt(billInput.value) + parseInt(tipAmount.value);
     } else if (percentage.textContent === "15%") {
       tipAmount.value = billInput.value * 0.15;
-      total.value = billInput.value * 0.15;
+      total.value = parseInt(billInput.value) + parseInt(tipAmount.value);
     } else if (percentage.textContent === "25%") {
       tipAmount.value = billInput.value * 0.25;
-      total.value = billInput.value * 0.25;
+      total.value = parseInt(billInput.value) + parseInt(tipAmount.value);
     } else if (percentage.textContent === "50%") {
       tipAmount.value = billInput.value * 0.5;
-      total.value = billInput.value * 0.5;
+      total.value = parseInt(billInput.value) + parseInt(tipAmount.value);
     }
   });
 });
@@ -60,7 +60,8 @@ peopleInput.addEventListener(
 peopleInput.addEventListener("input", (e) => {
   peopleInput.value = e.target.value;
   if (peopleInput.value > 1) {
-    total.value = peopleInput.value * total.value;
+    tipAmount.value = parseInt(tipAmount.value) / parseInt(peopleInput.value);
+    total.value = parseInt(billInput.value) / parseInt(peopleInput.value);
   }
 });
 

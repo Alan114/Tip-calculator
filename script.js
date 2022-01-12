@@ -61,7 +61,9 @@ peopleInput.addEventListener("input", (e) => {
   peopleInput.value = e.target.value;
   if (peopleInput.value > 1) {
     tipAmount.value = parseInt(tipAmount.value) / parseInt(peopleInput.value);
-    total.value = parseInt(billInput.value) / parseInt(peopleInput.value);
+    total.value =
+      parseInt(billInput.value) / parseInt(peopleInput.value) +
+      parseInt(tipAmount.value);
   }
 });
 

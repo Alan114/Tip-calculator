@@ -51,5 +51,7 @@ peopleInput.addEventListener(
 
 peopleInput.addEventListener("input", (e) => {
   peopleInput.value = e.target.value;
-  console.log(peopleInput.value);
+  if (peopleInput.value > 1) {
+    total.value = peopleInput.value * total.value;
+  }
 });

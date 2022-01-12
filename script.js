@@ -5,6 +5,14 @@ const tipAmount = document.querySelector("#tip-amount");
 const total = document.querySelector("#total");
 const reset = document.querySelector("#reset");
 
+tipAmount.addEventListener("keydown", (e) => {
+  e.preventDefault();
+});
+
+total.addEventListener("keydown", (e) => {
+  e.preventDefault();
+});
+
 billInput.addEventListener(
   "click",
   () => {

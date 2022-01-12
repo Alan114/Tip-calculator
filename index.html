@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="title"><h1 class="title">SPLITTER</h1></div>
+    <div class="container">
+      <div class="input-box">
+        <div class="bill-input">
+          <label for="bill">Bill</label>
+          <div class="input-img">            
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            </svg>
+          </div>
+          <input type="text" name="bill" value="142.55" />
+        </div>
+
+        <div class="number-box">
+          <div class="select-tip">Select Tip %</div>
+          <div class="number">5%</div>
+          <div class="number">10%</div>
+          <div class="number">15%</div>
+          <div class="number">25%</div>
+          <div class="number">50%</div>
+          <div class="number custom">Custom</div>
+        </div>
+      </div>
+
+      <div class="display-box">
+        <div class="people-input">
+          <label for="">Number of People</label>
+          <div class="input-img">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
+            </svg>
+          </div>
+          <input type="text" value="5" />
+        </div>
+        <div class="billing-box">
+          <div class="total-box">
+            <label class="tip-amount">Tip Amount / person</label>
+            <input type="text" value="$4.27" />
+            <label class="total">Total / person</label>
+            <input type="text" value="$32.79" />
+          </div>
+          <button>Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Alan Pečenković</a>.
+    </div>
+  </body>
+</html>

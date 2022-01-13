@@ -27,7 +27,11 @@ billInput.addEventListener("input", (e) => {
   billInput.value = e.target.value;
   tipAmount.value = billInput.value;
   total.value = billInput.value;
-  console.log(e.target.value);
+});
+
+customInput.addEventListener("input", (e) => {
+  tipAmount.value = (e.target.value * billInput.value) / 100;
+  total.value = parseFloat(billInput.value) + parseFloat(tipAmount.value);
 });
 
 tipPercentage.forEach((percentage) => {
@@ -81,4 +85,5 @@ reset.addEventListener("click", () => {
   peopleInput.value = 0;
   tipAmount.value = 0;
   total.value = 0;
+  customInput.style.display = "none";
 });
